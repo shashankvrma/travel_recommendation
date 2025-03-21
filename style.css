@@ -89,7 +89,7 @@ nav{
 
 #search{
     background-color: #fff;
-    padding: .3rem 1rem;
+    padding: .8rem 1rem;
     border-radius: 20px;
 }
 
@@ -98,7 +98,7 @@ nav{
 }
 
 .btn{
-    padding: .2rem .4rem;
+    padding: .6rem .4rem;
     border-radius: 5px;
     border: none;
     outline: none;
@@ -131,7 +131,6 @@ nav{
     background: linear-gradient(to right, rgb(5, 103, 107), rgba(5, 104, 107, 0.632),rgba(5, 104, 107, 0.332) ,#ffffff00);
     height: 100%;
     padding: 2rem 3rem;
-
 }
 
 
@@ -247,13 +246,17 @@ nav{
     font-size: 1.2rem;
 }
 
+#contact_home{
+    width: 100vw;
+}
+
 #Contactus{
     width: 100%;
     height: 100vh;
     padding: 2rem 5rem;
     background: linear-gradient(to right, rgb(5, 103, 107), rgba(5, 104, 107, 0.632),rgba(5, 104, 107, 0.332) ,#ffffff00);
     display: flex;
-    justify-content: space-between;  /* Distribute the header and form across the container */
+    justify-content: center;  
     align-items: center;
 }
 
@@ -266,18 +269,19 @@ nav{
     font-weight: bolder;
     line-height: 5rem;
     flex: 1;
+    max-width: 50%;
 }
 
 
 .formsection{
     margin-top: 2rem;
-    display: flex;
     align-items: center;
     justify-content: center;
     padding: 2rem 2rem;
     background-color: rgba(0, 0, 0, 0.288);
-    flex: 1;  /* Form takes 50% of the space */
+    flex: 1; 
     border-radius: 8px; 
+    max-width: 50%;
 }
 
 form{
@@ -302,7 +306,7 @@ form .inputval{
 
 .submitmessagebtn{
     width: 100%;
-    padding: .5rem 0;
+    padding: .8rem .5rem;
     margin-top: .8rem;
     color: #fff;
     background-color:rgb(5, 103, 107) ;

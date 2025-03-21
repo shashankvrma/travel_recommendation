@@ -177,6 +177,7 @@ nav{
 
 .mainhomecontent{
     padding: 5rem 2rem;
+    height:100vh;
 }
 
 .homesectionheader{
@@ -220,7 +221,7 @@ nav{
     display: flex;
     flex-direction: column;
     width: 100%;
-    height:auto;
+    height:100vh;
     padding: 4rem 5rem;
     background: linear-gradient(to right, rgb(5, 103, 107), rgba(5, 104, 107, 0.632),rgba(5, 104, 107, 0.332) ,#ffffff00);
 }
@@ -248,12 +249,15 @@ nav{
 
 #Contactus{
     width: 100%;
-    height: 60vh;
+    height: 100vh;
     padding: 2rem 5rem;
     background: linear-gradient(to right, rgb(5, 103, 107), rgba(5, 104, 107, 0.632),rgba(5, 104, 107, 0.332) ,#ffffff00);
+    display: flex;
+    justify-content: space-between;  /* Distribute the header and form across the container */
+    align-items: center;
 }
 
-.contactustittle{
+.contactustitle{
     font-size: 4rem;
     font-family: "Poppins", sans-serif;
     font-weight: 700;
@@ -261,6 +265,7 @@ nav{
     color: #fff;
     font-weight: bolder;
     line-height: 5rem;
+    flex: 1;
 }
 
 
@@ -269,8 +274,10 @@ nav{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 1rem 1rem;
+    padding: 2rem 2rem;
     background-color: rgba(0, 0, 0, 0.288);
+    flex: 1;  /* Form takes 50% of the space */
+    border-radius: 8px; 
 }
 
 form{
@@ -288,7 +295,8 @@ form .inputval{
     color: #fff;
     background: transparent;
     border-radius: 5px;
-    padding: .3rem .5rem;
+    padding: .8rem .5rem;
+    margin-bottom: 20px;
 }
 
 
@@ -397,4 +405,80 @@ form .inputval{
 
 .notfound{
     color: #fff;
+}
+
+/* Our Team Section */
+.our-team {
+    padding: 40px 20px;
+    margin-top: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.our-team h2 {
+    font-size: 60px;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.team-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.team-member {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: white;
+}
+
+.team-member img {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.team-member h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.team-member p {
+    color: white;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-image {
+        margin-bottom: 20px;
+    }
+
+    .about-content h1 {
+        font-size: 28px;
+    }
+
+    .team-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .team-member {
+        width: 80%;
+        margin-bottom: 30px;
+    }
 }
